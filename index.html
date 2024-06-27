@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body class="flex justify-center items-center">
+  <section class="flex flex-col mt-5 w-[300px] h-[500px] border border-pink-500 rounded-md shadow-[0_35px_60px_-15px_rgba(0,0,0,0.8)] overflow-hidden">
+    <header class="movie_header"></header>
+    <div>
+        <div class="flex items-center gap-3 p-2">
+    
+    <p class="text-green-500">Available <i class="fa-solid fa-couch"></i></p>
+            <p class="text-red-500">Booked <i class="fa-solid fa-couch"></i></p>
+            <p class="text-gray-600">Reserved <i class="fa-solid fa-couch"></i></p>
+        </div>
+        <div id="seats" class="p-3 grid grid-cols-8 gap-1 place-content-center "></div>
+    </div>
+    <footer class="flex bg-pink-500">
+        <div class="p-2 bg-pink-600 text-white">
+            <p>Ticket</p>
+            <p>Price</p>
+            <strong>Total</strong>
+        </div>
+        <div class="p-2 w-[100px] text-white">
+            <p id="ticket"></p>
+            <p><i class="fa-solid fa-indian-rupee-sign"></i> 100</p> 
+    <strong><i class="fa-solid fa-indian-rupee-sign"></i> <span id="total"></span></strong>
+        </div>
+        <button class="bg-green-300 m-auto p-2 rounded-md text-pink-500 font-bold hover:bg-white transition ease-in">Book Now</button>
+    </footer>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
